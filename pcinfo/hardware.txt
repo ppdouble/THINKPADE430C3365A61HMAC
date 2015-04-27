@@ -1,0 +1,11 @@
+联想 ThinkPad Edge E430c 笔记本电脑3365A61
+处理器     英特尔 第三代酷睿 i5-3210M @ 2.50GHz 双核
+主板        联想 3365A61 (英特尔 Ivy Bridge - HM77 Express 芯片组)
+内存        6 GB ( 海力士 DDR3 1600MHz / 金士顿 DDR3 1600MHz )
+显卡        英特尔 Ivy Bridge Graphics Controller ( 2112 MB / 联想 )
+声卡        High Definition Audio Device @ 英特尔 Panther Point High Definition Audio Controller, Conexant 20671 codec        
+网卡        瑞昱 RTL8168F PCI-E Gigabit Ethernet NIC
+无线网卡  瑞昱 RTL8188CE Wireless LAN 802.11n PCI-E NIC
+SD读卡器 瑞昱 RTS5229
+显示器	联想 LEN40A0 ( 14 英寸 )
+光驱	日立-LG DVDRAM GT50N DVD刻录机
