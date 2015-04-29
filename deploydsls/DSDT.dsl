@@ -11231,11 +11231,18 @@ DefinitionBlock ("DSDT.aml", "DSDT", 2, "LENOVO", "TP-H0   ", 0x00002060)
                             Zero, 
                             Zero
                         })
-                        Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
-                        {
-                            /* 0000 */  0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-                            /* 0008 */  0x30, 0x1C, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
-                        })
+                        //Name (_PLD, Buffer (0x10)  // _PLD: Physical Location of Device
+                        //{
+                        //    /* 0000 */  0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+                        //    /* 0008 */  0x30, 0x1C, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
+                        //})
+                        Name (_PLD, Package (0x01) {  // _PLD: Physical Location of Device  // by nickdong
+                            Buffer (0x10)  
+                            {
+                                /* 0000 */  0x81, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+                                /* 0008 */  0x30, 0x1C, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 
+                            }
+                        })                        
                         Alias (SBV2, SDGV)
                         Method (_DSM, 4, Serialized)  // _DSM: Device-Specific Method
                         {
